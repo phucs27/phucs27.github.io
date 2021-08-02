@@ -18,7 +18,7 @@ li.nav-item{
 .thongtin1{
     width: 100%;
 
-    background-color: rgb(136, 49, 49);
+    background-color:#d24150;
     position: relative;
     z-index: 1;
 }
@@ -27,8 +27,12 @@ li.nav-item{
     position: absolute;
     width: 50%;
     height: 100%;
-    background: rgb(184, 77, 77);
+    background: #d65562;
     z-index: 1;
+}
+.content_tt img{
+    max-width: 200px;
+    border-radius: 50%; 
 }
 .content_tt a{
     width: 120px;
@@ -40,29 +44,32 @@ li.nav-item{
     font-size: 16px;
     line-height: 25px;
     color: black;
-    width: 45%;
+    width: 90%;
     margin: auto;
     margin-bottom: 30px;
 }
-.content_tt img{
-    max-width: 120px;
-    border-radius: 50%;
-  
-}
+
 .content_tt{
     z-index: 2;
     position: relative;
-    padding-top: 9%;
+    padding-top: 15%;
 }
-.content_tt img{
-    max-width: 120px;
-    border-radius: 50%;
-  
-}
+
 .content_tt h2{
     color: aliceblue;
     margin-top: 35px;
     text-transform: uppercase;
+    font-size: 41px;
+}
+.timeline{
+    color: #d83142;
+    margin-bottom: 15px;
+}
+.content_edu h3{
+    font-size: 22px;
+}
+.picture_edu{
+    width: 100%;
 }
 @media (min-width: 576px) { 
     .content_tt a{
@@ -70,6 +77,13 @@ li.nav-item{
         background-color: black;
         border: none;
         margin-bottom: 50px;
+    }
+    .content_tt p{
+        width: 80%;
+    }
+    .content_tt img{
+        width: 230px;
+        border-radius: 50%;
     }
  }
 
@@ -79,6 +93,14 @@ li.nav-item{
         background-color: black;
         border: none;
         margin-bottom: 50px;
+    }
+    .content_tt p{
+        width: 80%;
+    }
+    .content_tt{
+        z-index: 2;
+        position: relative;
+        padding-top: 11%;
     }
   }
 
@@ -90,16 +112,25 @@ li.nav-item{
         width: 120px;
         background-color: black;
         border: none;
-        margin-bottom: 85px;
+        margin-bottom: 95px;
     }
-      
+    .content_tt p{
+        width: 50%;
+    }
+    .content_tt img{
+        max-width: 120px;
+        border-radius: 50%; 
+    }
 }
 
 @media (min-width: 1200px) { 
     a.navbar-brand {
         padding-left: 20px;
     }
-    
+    .content_tt img{
+        max-width: 150px;
+        border-radius: 50%; 
+    }
 }
 
 @media (min-width: 1400px) { 
