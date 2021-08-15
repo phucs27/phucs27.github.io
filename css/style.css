@@ -115,6 +115,10 @@ form input,textarea {
     background-color: #d65562;
     border: none;
 }
+.header{
+    background-color: black;
+    height: 35px;
+}
 @media (min-width: 576px) { 
     .content_tt a{
         width: 120px;
