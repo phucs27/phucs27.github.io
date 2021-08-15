@@ -115,9 +115,6 @@ form input,textarea {
     background-color: #d65562;
     border: none;
 }
-.info{
-    margin-left: 50px;
-}
 @media (min-width: 576px) { 
     .content_tt a{
         width: 120px;
@@ -132,9 +129,7 @@ form input,textarea {
         width: 230px;
         border-radius: 50%;
     }
-    .info{
-        margin-left: 35px;
-    }
+    
  }
 
 @media (min-width: 768px) {
@@ -152,9 +147,7 @@ form input,textarea {
         position: relative;
         padding-top: 11%;
     }
-    .info{
-        margin-left: 0px;
-    }
+    
   }
 
 @media (min-width: 992px) {  
