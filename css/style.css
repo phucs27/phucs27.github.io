@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    
 }
 .col-12{
     padding: 0;
@@ -32,6 +31,7 @@ li.nav-item{
     z-index: 1;
 }
 .content_tt img{
+    margin-top: 22px;
     max-width: 200px;
     border-radius: 50%; 
 }
@@ -57,7 +57,6 @@ li.nav-item{
 .content_tt h2{
     color: aliceblue;
     margin-top: 35px;
-    text-transform: uppercase;
     font-size: 41px;
 }
 .edu{
@@ -71,8 +70,11 @@ li.nav-item{
     width: 78%;
     margin: auto;
 }
+.content_edu p{
+    font-size: 14px;
+}
 span.time{
-    font-size: 12px;
+    font-size: 11px;
 }
 .roller{
     width: 24px;
@@ -101,6 +103,21 @@ span.time{
     width: 26px;
     height: 45px;
 }
+.contact{
+    background-color: #d65562 ;
+}
+.contact button{
+    width: 12%;
+}
+form input,textarea {
+    width: 75%;
+    margin-bottom: 26px;
+    background-color: #d65562;
+    border: none;
+}
+.info{
+    margin-left: 50px;
+}
 @media (min-width: 576px) { 
     .content_tt a{
         width: 120px;
@@ -114,6 +131,9 @@ span.time{
     .content_tt img{
         width: 230px;
         border-radius: 50%;
+    }
+    .info{
+        margin-left: 35px;
     }
  }
 
@@ -131,6 +151,9 @@ span.time{
         z-index: 2;
         position: relative;
         padding-top: 11%;
+    }
+    .info{
+        margin-left: 0px;
     }
   }
 
