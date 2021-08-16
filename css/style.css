@@ -115,10 +115,38 @@ form input,textarea {
     background-color: #d65562;
     border: none;
 }
+.por-name span{
+    margin: 0 8px;
+}
+.por-name{
+    cursor: pointer;
+}
 .header{
     background-color: black;
-    height: 35px;
+    
 }
+.grid {
+    background: #DDD;
+  }
+  
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* ---- .grid-item ---- */
+  
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+  .grid-item img {
+    display: block;
+    width: 100%;
+  }
+
 @media (min-width: 576px) { 
     .content_tt a{
         width: 120px;
@@ -133,7 +161,10 @@ form input,textarea {
         width: 230px;
         border-radius: 50%;
     }
-    
+    .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
  }
 
 @media (min-width: 768px) {
@@ -151,7 +182,10 @@ form input,textarea {
         position: relative;
         padding-top: 11%;
     }
-    
+    .grid-sizer,
+    .grid-item {
+        width: 33.33%;
+  }
   }
 
 @media (min-width: 992px) {  

@@ -24,7 +24,7 @@
                 <div class="collapse navbar-collapse flex-grow-0 " id="navbarNav" >
                   <ul class="navbar-nav">
                     <li class="nav-item ">
-                      <a class="nav-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+                      <a class="nav-link " href="#">Giới thiệu <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link exp" href="#">Kinh nghiệm</a>
@@ -107,16 +107,55 @@
             </div>
           </div>
           <div class="col-12 portfolio" id="portfolio">
-            <h3 class="text-center font-weight-bold py-4">Sản phẩm</h3>
+            <h3 class="text-center font-weight-bold pt-3">Sản phẩm</h3>
+            <!--<div class="por-name text-center d-flex justify-content-center pb-3" >
+              <div class="active">All</div><span>|</span>
+              <div>Photoshop</div><span>|</span>
+              <div>UXUI</div><span>|</span>
+              <div>Dev</div>
+            </div>-->
+            <div class="portfolio">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">All</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Photoshop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">UX/UI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">DEV</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pics-all grid">
+              <div class="grid-sizer"></div>
+              <div class="grid-item"><img src="./picture/pts/img2.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/pts/img3.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/pts/img4.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/pts/img6.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/pts/img1.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/pts/img5.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/pts/img7.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/uxui/1Dang nhap.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/uxui/Home – 1.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/uxui/profile – 1.jpg" alt=""></div>
+              <div class="grid-item"><img src="./picture/uxui/Nganh.jpg" alt=""></div>
+            </div>
+            <div class="pic-dev"></div>
+            <div class="pics-pts"></div>
+            <div class="pics-uxui"></div>
           </div>               
         </div>
         <div class="row contact " id="contact">
           <div class="col-12 text-center ">
-            <h3 class="  font-weight-bold py-4">Liên hệ</h3> 
+            <h3 class="  font-weight-bold py-3">Liên hệ</h3> 
           </div>
           <div class="col-12 col-sm-6 py-4 text-center">
             <form action="" method="POST">
-              <input class="border-bottom" type="text" name="name" placeholder="Your name"><br>
+              <input class="border-bottom"  type="text" name="name" placeholder="Your name"><br>
               <input class="border-bottom" type="email" name="email" placeholder="Email"><br>
               <textarea class="border-bottom" name="message" id="message" placeholder="Message" rows="4"></textarea><br>
               <button class="border-0 rounded " type="submit"><b>Gửi</b></button>
@@ -126,6 +165,7 @@
           <div class="col-12 col-sm-4 pt-4 text-center text-sm-left ">
             <div class="info pb-3 ">
               <img src="./Picture/envelope-fill.svg" alt="">
+              <b>Email</b><br>
               <span>doanvanphuc27@gmail.com</span>     
             </div>
             <div class="info pb-3">
@@ -144,12 +184,13 @@
           </div> 
         </div>
         <div class="header text-center">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, vitae.</p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, vitae.
         </div>
       </div>
     <script src="./js/jquery-3.4.1.min.js" ></script>
     <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>  
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/masonry.min.js"></script>  
     <script src="./js/script.js"></script>
   </body>
 </html>
