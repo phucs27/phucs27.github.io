@@ -55,16 +55,16 @@ Latest commit b82f0b9 3 hours ago
                 <div class="collapse navbar-collapse flex-grow-0 " id="navbarNav" >
                   <ul class="navbar-nav">
                     <li class="nav-item ">
-                      <a class="nav-link " href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+                      <a class="nav-link gioithieu" href="">Giới thiệu <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link exp" href="#">Kinh nghiệm</a>
+                      <a class="nav-link exp" href="">Kinh nghiệm</a>
                     </li>
-                    <li class="nav-item sp">
-                      <a class="nav-link" href="#">Sản phẩm</a>
+                    <li class="nav-item ">
+                      <a class="nav-link duan" href="">Dự án</a>
                     </li>
                     <li class="nav-item cont">
-                      <a class="nav-link contack-me" href="#">Liên hệ</a>
+                      <a class="nav-link contack-me" href="">Liên hệ</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link " href="#">Blog</a>
@@ -75,7 +75,7 @@ Latest commit b82f0b9 3 hours ago
             </div>
             <div class="main">
               <!--info-->
-              <div class="thongtin1">
+              <div class="thongtin1" id="gioithieu">
                 <div class="content_tt text-center ">
                   <img src="./Picture/avatar.png" alt="phuc">
                   <h2 class="text-uppercase">Đoàn Văn Phúc</h2>
@@ -165,12 +165,12 @@ Latest commit b82f0b9 3 hours ago
             <div class="pics-pts"></div>
             <div class="pics-uxui"></div>
           </div> -->              
-          <div class="col-12 portfolio" id="portfolio ">
-            <h3 class="text-center font-weight-bold pt-3">Sản phẩm</h3>
+          <div class="col-12 portfolio" >
+            <h3 class="text-center font-weight-bold pt-3" id="duan">Dự án</h3>
             <div class="por-name tabs text-center d-flex justify-content-center pb-3" >
-              <div data-tab="all" >All</div><span>|</span>
-              <div data-tab="pts">Photoshop</div><span>|</span>
-              <div data-tab="uxui">UXUI</div><span>|</span>
+              <div class="tab-child" data-tab="all" >ALL</div><span>|</span>
+              <div class="tab-child" data-tab="pts">PHOTOSHOP</div><span>|</span>
+              <div class="tab-child" data-tab="uxui">UXUI</div><span>|</span>
             </div>
             <div class="content">
               <div class="pics-all grid active" id="all">
@@ -195,9 +195,9 @@ Latest commit b82f0b9 3 hours ago
                 <img class="grid-item" src="./picture/pts/img6.jpg" alt="">
                 <img class="grid-item" src="./picture/pts/img5.jpg" alt="">
                 <img class="grid-item" src="./picture/pts/img7.jpg" alt="">
+                
               </div>
               <div class="pics-uxui grid" id="uxui">
-                
                 <img class="grid-item" src="./Picture/uxui/1Dang nhap.jpg" alt="">
                 <img class="grid-item" src="./Picture/uxui/Home – 1.jpg" alt="">
                 <img class="grid-item" src="./Picture/uxui/profile – 1.jpg" alt="">
@@ -213,32 +213,43 @@ Latest commit b82f0b9 3 hours ago
           <div class="col-12 text-center ">
             <h3 class="  font-weight-bold py-3">Liên hệ</h3> 
           </div>
-          <div class="col-12 col-sm-6 py-4 text-center">
+          <div class="col-12 col-md-6 py-4 text-center">
             <form action="" method="POST">
-              <input class="border-bottom"  type="text" name="name" placeholder="Your name"><br>
-              <input class="border-bottom" type="email" name="email" placeholder="Email"><br>
-              <textarea class="border-bottom" name="message" id="message" placeholder="Message" rows="4"></textarea><br>
-              <button class="border-0 rounded " type="submit"><b>Gửi</b></button>
+              <input  id="toName" class="border-bottom disable"  type="text" name="name" placeholder="Your name"><br>
+              <input id="fromEmail" class="border-bottom" type="email" name="email" placeholder="Email"><br>
+              <textarea id="message" class="border-bottom" name="message" id="message" placeholder="Message" rows="4"></textarea><br>
+              <button onclick="sendMail()" class="border-0 rounded " type="submit"><b>Gửi</b></button>
             </form>
           </div>
-          <div class="col-sm-2"></div>
-          <div class="col-12 col-sm-4 pt-4 text-center text-sm-left ">
-            <div class="info pb-3 ">
+          <div class="col-md-2"></div>
+          <div class="col-12 col-md-4 pt-4 infos ">
+            <div class="info pb-3 d-flex">
               <img src="./Picture/envelope-fill.svg" alt="">
-              <b>Email</b><br>
-              <span>doanvanphuc27@gmail.com</span>     
+              <div class="tt">
+                <b>Email</b>
+                <p>doanvanphuc27@gmail.com</p>
+              </div>   
             </div>
-            <div class="info pb-3">
+            <div class="info pb-3 d-flex">
               <img src="./Picture/telephone-fill.svg" alt="">
-              <span>0962190200</span>
+              <div class="tt">
+                <b>Phone</b>
+                <p>0962190200</p>
+              </div>
             </div>
-            <div class="info pb-3">
+            <div class="info pb-3 d-flex">
               <img src="./Picture/geo-alt-fill.svg" alt="">
-              <span>Hungyen, Hungyen, Vietnam</span>
+              <div class="tt">
+                <b>Address</b>
+                <p>HungYen, HungYen, Vienam</p>
+              </div>
             </div> 
-            <div class="info pb-3">
+            <div class="info pb-3 d-flex">
               <img src="./Picture/facebook.svg" alt="">
-              <span>fb.com/phuc.oct27</span>
+              <div class="tt">
+                <b>Fb</b>
+                <p>fb.com/phuc.oct27</p>
+             </div>
             </div>              
             </div>
           </div> 
@@ -253,5 +264,12 @@ Latest commit b82f0b9 3 hours ago
     <script src="./js/masonry.min.js"></script>  
     <script src="./js/script.js"></script>
     <script src="./js/tabs.js"></script>
+    <script src="./js/send-mail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_OVeE89YjAJinBfy6aNVP0");
+      })();
+    </script>
   </body>
 </html>

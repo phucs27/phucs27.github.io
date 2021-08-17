@@ -125,7 +125,7 @@ form input,textarea {
     
 }
 .grid {
-    background: #DDD;
+    
   }
   
   /* clear fix */
@@ -140,12 +140,26 @@ form input,textarea {
   .grid-sizer,
   .grid-item {
     width: 100%;
+    padding: 5px;
   }
   .grid-item img {
     display: block;
     width: 100%;
   }
-
+.info{
+      height: 55px;
+      
+  }
+.info img{
+    width: 50px;
+}
+.info {
+    margin-left: 38px;
+}
+.info p{
+    margin-top: -10px;
+}
+.infos{color: rgb(223, 223, 223);}
 @media (min-width: 576px) { 
     .content_tt a{
         width: 120px;
@@ -161,9 +175,12 @@ form input,textarea {
         border-radius: 50%;
     }
     .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
+    .grid-item {
+      width: 50%;
+    }
+    .infos{
+        margin-left: 30px;
+    }
  }
 
 @media (min-width: 768px) {
@@ -184,8 +201,11 @@ form input,textarea {
     .grid-sizer,
     .grid-item {
         width: 33.33%;
-  }
-  }
+    }
+    .infos{
+        margin-left: -38px;
+    }
+}
 
 @media (min-width: 992px) {  
     a.navbar-brand {

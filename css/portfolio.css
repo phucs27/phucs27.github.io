@@ -1,3 +1,6 @@
 .content div:not(.active){
     display: none;
 }
+.tab-child{
+    cursor: pointer;
+}

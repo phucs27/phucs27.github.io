@@ -1,15 +1,18 @@
 $(function(){
     $(".roller, .exp").click(function(){
-        $('body, html').animate({scrollTop:$('#edu').offset().top});
+        $('body, html').animate({scrollTop:$('#edu').offset().top},800);
         return false;
     })  
-
-    $(".sp").click(function(){
-        $('body, html').animate({scrollTop:$('#portfolio').offset()});
+    $(".gioithieu").click(function(){
+        $('body, html').animate({scrollTop:$('#gioithieu').offset().top},800);
         return false;
     })
     $(".cont").click(function(){
-        $('body, html').animate({scrollTop:$('#contact').offset().top});
+        $('body, html').animate({scrollTop:$('#contact').offset().top},800);
+        return false;
+    })
+    $(".duan").click(function(){
+        $('body, html').animate({scrollTop:$('#duan').offset().top},800);
         return false;
     })
 })
