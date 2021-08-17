@@ -119,9 +119,7 @@ form input,textarea {
 .por-name span{
     margin: 0 8px;
 }
-.por-name{
-    cursor: pointer;
-}
+
 .header{
     background-color: black;
     
@@ -131,7 +129,7 @@ form input,textarea {
   }
   
   /* clear fix */
-  .grid:after {
+.grid:after {
     content: '';
     display: block;
     clear: both;

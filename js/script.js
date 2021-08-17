@@ -5,7 +5,7 @@ $(function(){
     })  
 
     $(".sp").click(function(){
-        $('body, html').animate({scrollTop:$('#portfolio').offset().top});
+        $('body, html').animate({scrollTop:$('#portfolio').offset()});
         return false;
     })
     $(".cont").click(function(){
@@ -13,8 +13,8 @@ $(function(){
         return false;
     })
 })
-var grid = document.querySelector('.grid');
 
+var grid = document.querySelector('.grid');
 var msnry = new Masonry( grid, {
   itemSelector: '.grid-item',
   columnWidth: '.grid-sizer',

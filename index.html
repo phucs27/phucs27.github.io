@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@phucs27 
+phucs27
+/
+phucs27.github.io
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+phucs27.github.io/index.html
+@phucs27
+phucs27 'mma'
+Latest commit b82f0b9 3 hours ago
+ History
+ 1 contributor
+196 lines (191 sloc)  9.87 KB
+  
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,6 +39,7 @@
     
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
   </head>
   <body>
       <div class="container-fluid">
@@ -59,6 +90,7 @@
               </div>
             </div>
           </div>
+          <!--kinh nghiem, hoc van-->
           <div class="col-12 col-sm-6 edu" id="edu">
             <h3 class="text-center font-weight-bold py-4">Học vấn</h3> 
             <div class="content_edu">        
@@ -106,31 +138,16 @@
               <hr class="border">
             </div>
           </div>
-          <div class="col-12 portfolio" id="portfolio">
+          <!--portfolio-->
+          <!--<div class="col-12 portfolio" id="portfolio">
             <h3 class="text-center font-weight-bold pt-3">Sản phẩm</h3>
-            <div class="por-name text-center d-flex justify-content-center pb-3" >
+            <div class="tabs por-name text-center d-flex justify-content-center pb-3" >
               <div class="active">All</div><span>|</span>
               <div>Photoshop</div><span>|</span>
               <div>UXUI</div><span>|</span>
-              
-            </div>
-            <!--<div class="portfolio">
-              <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">All</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Photoshop</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">UX/UI</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">DEV</a>
-                </li>
-              </ul>
-            </div>-->
-            <div class="pics-all grid">
+              <div>Dev</div>
+            </div>          
+            <div class="content pics-all grid active">
               <div class="grid-sizer"></div>
               <div class="grid-item"><img src="./picture/pts/img2.jpg" alt=""></div>
               <div class="grid-item"><img src="./picture/pts/img3.jpg" alt=""></div>
@@ -147,8 +164,51 @@
             <div class="pic-dev"></div>
             <div class="pics-pts"></div>
             <div class="pics-uxui"></div>
-          </div>               
+          </div> -->              
+          <div class="col-12 portfolio" id="portfolio ">
+            <h3 class="text-center font-weight-bold pt-3">Sản phẩm</h3>
+            <div class="por-name tabs text-center d-flex justify-content-center pb-3" >
+              <div data-tab="all" >All</div><span>|</span>
+              <div data-tab="pts">Photoshop</div><span>|</span>
+              <div data-tab="uxui">UXUI</div><span>|</span>
+            </div>
+            <div class="content">
+              <div class="pics-all grid active" id="all">
+                <img class="grid-sizer" src="" alt="">
+                <img class="grid-item" src="./picture/pts/img1.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img2.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img3.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img4.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img6.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img5.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img7.jpg" alt="">
+                <img class="grid-item" src="./Picture/uxui/Lập trinh.jpg" alt="">
+                <img class="grid-item" src="./Picture/uxui/Chi tiet khoá học – 2.jpg" alt="">
+                <img class="grid-item" src="./Picture/uxui/Chi tiet khoá học đã mua.jpg" alt="">        
+              </div>
+              <div class="pics-pts grid" id="pts">
+                <img class="grid-sizer" src="" alt="">
+                <img class="grid-item" src="./picture/pts/img1.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img2.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img3.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img4.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img6.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img5.jpg" alt="">
+                <img class="grid-item" src="./picture/pts/img7.jpg" alt="">
+              </div>
+              <div class="pics-uxui grid" id="uxui">
+                
+                <img class="grid-item" src="./Picture/uxui/1Dang nhap.jpg" alt="">
+                <img class="grid-item" src="./Picture/uxui/Home – 1.jpg" alt="">
+                <img class="grid-item" src="./Picture/uxui/profile – 1.jpg" alt="">
+                <img class="grid-item" src="./Picture/uxui/Lập trinh.jpg" alt="">
+                <img class="grid-item" src="./Picture/uxui/Chi tiet khoá học – 2.jpg" alt="">
+                <img class="grid-item" src="./Picture/uxui/Chi tiet khoá học đã mua.jpg" alt="">
+              </div>
+            </div>
+          </div> 
         </div>
+        <!--contact-->
         <div class="row contact " id="contact">
           <div class="col-12 text-center ">
             <h3 class="  font-weight-bold py-3">Liên hệ</h3> 
@@ -192,5 +252,6 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/masonry.min.js"></script>  
     <script src="./js/script.js"></script>
+    <script src="./js/tabs.js"></script>
   </body>
 </html>
