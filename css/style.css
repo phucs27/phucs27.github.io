@@ -147,19 +147,18 @@ form input,textarea {
     width: 100%;
   }
 .info{
-      height: 55px;
+      height: 45px;
       
   }
 .info img{
-    width: 50px;
+    width: 35px;
+    
 }
 .info {
     margin-left: 38px;
+    padding-bottom: 25px;
 }
-.info p{
-    margin-top: -10px;
-}
-.infos{color: rgb(223, 223, 223);}
+
 @media (min-width: 576px) { 
     .content_tt a{
         width: 120px;
@@ -203,7 +202,7 @@ form input,textarea {
         width: 33.33%;
     }
     .infos{
-        margin-left: -38px;
+        margin-left: -68px;
     }
 }
 
