@@ -138,12 +138,16 @@ form input,textarea {
   
   /* ---- .grid-item ---- */
   
-  .grid-sizer,
-  .grid-item {
+.grid-sizer,
+.grid-item {
     width: 100%;
     padding: 0px;
+    
+}
+.grid-item {
+    float: left;
   }
-  .grid-item img {
+.grid-item img {
     display: block;
     width: 100%;
   }

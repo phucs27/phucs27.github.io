@@ -7,7 +7,7 @@ $(function(){
         $('body, html').animate({scrollTop:$('#gioithieu').offset().top},800);
         return false;
     })
-    $(".cont").click(function(){
+    $(".cont, .hire_button").click(function(){
         $('body, html').animate({scrollTop:$('#contact').offset().top},800);
         return false;
     })
