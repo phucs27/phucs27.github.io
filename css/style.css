@@ -124,6 +124,7 @@ form input,textarea {
     background-color: black;
     
 }
+/*portfolio*/
 .grid {
     
   }
@@ -140,7 +141,7 @@ form input,textarea {
   .grid-sizer,
   .grid-item {
     width: 100%;
-    padding: 5px;
+    padding: 0px;
   }
   .grid-item img {
     display: block;
@@ -199,7 +200,7 @@ form input,textarea {
     }
     .grid-sizer,
     .grid-item {
-        width: 33.33%;
+        width: 33.3%;
     }
     .infos{
         margin-left: -68px;
@@ -222,6 +223,10 @@ form input,textarea {
     .content_tt img{
         max-width: 120px;
         border-radius: 50%; 
+    }
+    .grid-sizer,
+    .grid-item {
+        width: 25%;
     }
 }
 @media (min-width: 1200px) { 
