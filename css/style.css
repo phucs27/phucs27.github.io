@@ -125,9 +125,7 @@ form input,textarea {
     
 }
 /*portfolio*/
-.grid {
-    
-  }
+
   
   /* clear fix */
 .grid:after {
@@ -163,7 +161,7 @@ form input,textarea {
     margin-left: 38px;
     padding-bottom: 25px;
 }
-
+.tt b{color: antiquewhite;}
 @media (min-width: 576px) { 
     .content_tt a{
         width: 120px;
