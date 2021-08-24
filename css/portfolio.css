@@ -7,3 +7,51 @@
 .color{
     color: #d65562;
 }
+
+/*portfolio*/
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+  
+/* ---- .grid-item ---- */
+  
+.grid-sizer,
+.grid-item {
+    width: 100%;
+    padding: 0px;
+    
+}
+.grid-item {
+    float: left;
+  }
+.grid-item img {
+    display: block;
+    width: 100%;
+  }
+@media (min-width: 576px) { 
+    .grid-sizer,
+    .grid-item {
+      width: 50%;
+    }
+ }
+
+@media (min-width: 768px) {  
+    .grid-sizer,
+    .grid-item {
+        width: 33.3%;
+        padding: 0.5px;
+    }
+}
+
+@media (min-width: 1024px) {  
+    .grid-sizer,
+    .grid-item {
+        max-width: 25% ;
+        padding: 1px ;
+    }
+}
+
+@media (min-width: 1200px) {  }
