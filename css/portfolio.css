@@ -9,6 +9,7 @@
 }
 
 /*portfolio*/
+
 /* clear fix */
 .grid:after {
     content: '';
@@ -26,11 +27,15 @@
 }
 .grid-item {
     float: left;
-  }
+}
 .grid-item img {
     display: block;
     width: 100%;
-  }
+}
+.note{
+    font-size: 11px;
+    color: rgb(131, 126, 126);
+}
 @media (min-width: 576px) { 
     .grid-sizer,
     .grid-item {
@@ -46,11 +51,11 @@
     }
 }
 
-@media (min-width: 1024px) {  
+@media (min-width: 992px) {  
     .grid-sizer,
     .grid-item {
         max-width: 25% ;
-        padding: 1px ;
+        
     }
 }
 
