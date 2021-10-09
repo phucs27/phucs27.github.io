@@ -3,6 +3,13 @@
     margin: 0;
     
 }
+.container-fluid{
+    max-width: 1920px;
+}
+.navbar{
+    max-width: 1922px;
+    margin: 0 auto;
+}
 .col-12{
     padding: 0;
     
